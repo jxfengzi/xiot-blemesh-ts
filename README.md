@@ -1,1 +1,2 @@
-# xiot-blemesh-ts
+# xiot-spec-ts
+XIOT Specification Codec

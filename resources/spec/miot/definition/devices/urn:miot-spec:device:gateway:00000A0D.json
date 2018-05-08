@@ -1,0 +1,12 @@
+{
+    "type": "urn:miot-spec:device:gateway:00000A0D",
+    "description": "gateway",
+    "required-services": [
+        "urn:miot-spec:service:device-information:00000800"
+    ],
+    "optional-services": [
+        "urn:miot-spec:service:lightbulb:00000803",
+        "urn:miot-spec:service:speaker:0000080F",
+        "urn:miot-spec:service:bridge:00000813"
+    ]
+}

@@ -1,0 +1,16 @@
+{
+    "type": "urn:miot-spec:property:lightbulb-mode:0000002B",
+    "description": "Lightbulb Mode Status",
+    "format": "uint8",
+    "access": ["read", "write", "notify"],
+    "value-list": [
+        {
+            "value": 1,
+            "description": "Day"
+        },
+        {
+            "value": 2,
+            "description": "Night"
+        }
+    ]
+}

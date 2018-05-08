@@ -1,0 +1,13 @@
+{
+    "type": "urn:miot-spec:device:air-purifier:00000A05",
+    "description": "Air Purifier",
+    "required-services": [
+        "urn:miot-spec:service:device-information:00000800",
+        "urn:miot-spec:service:air-purifier:00000804"
+    ],
+    "optional-services": [
+        "urn:miot-spec:service:air-quality-sensor:00000806",
+        "urn:miot-spec:service:temperature-sensor:00000807",
+        "urn:miot-spec:service:humidity-sensor:00000808"
+    ]
+}

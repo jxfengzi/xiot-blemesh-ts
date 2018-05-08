@@ -1,0 +1,12 @@
+{
+    "type": "urn:miot-spec:device:temperature-humidity-sensor:00000A0B",
+    "description": "Weather Monitor",
+    "required-services": [
+        "urn:miot-spec:service:temperature-sensor:00000807",
+        "urn:miot-spec:service:humidity-sensor:00000808"
+    ],
+    "optional-services": [
+        "urn:miot-spec:service:battery:00000809",
+        "urn:miot-spec:service:atmospheric-pressure-sensor:0000080E"
+    ]
+}

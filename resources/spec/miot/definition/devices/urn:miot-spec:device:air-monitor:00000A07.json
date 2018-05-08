@@ -1,0 +1,12 @@
+{
+    "type": "urn:miot-spec:device:air-monitor:00000A07",
+    "description": "Air Monitor",
+    "required-services": [
+        "urn:miot-spec:service:device-information:00000800",
+        "urn:miot-spec:service:air-quality-sensor:00000806"
+    ],
+    "optional-services": [
+        "urn:miot-spec:service:battery:00000809",
+        "urn:miot-spec:service:humidity-sensor:00000808"
+    ]
+}

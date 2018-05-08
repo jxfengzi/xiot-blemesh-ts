@@ -1,0 +1,8 @@
+{
+    "type": "urn:miot-spec:device:lightbulb:00000A03",
+    "description": "Lightbulb",
+    "required-services": [
+        "urn:miot-spec:service:device-information:00000800",
+        "urn:miot-spec:service:lightbulb:00000803"
+    ]
+}

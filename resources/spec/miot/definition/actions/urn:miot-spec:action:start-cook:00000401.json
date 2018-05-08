@@ -1,0 +1,5 @@
+{
+    "type": "urn:miot-spec:action:start-cook:00000401",
+    "description": "Start Cook",
+    "in": ["urn:miot-spec:property:cooker-cook:00000021"]
+}
