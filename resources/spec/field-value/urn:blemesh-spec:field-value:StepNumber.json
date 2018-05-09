@@ -1,0 +1,10 @@
+{
+    "type": "urn:blemesh-spec:field-value:StepNumber",
+    "format": "uint8",
+    "bits": 6,
+    "value-list": [
+        { "value": "0x00", "description": "Immediate" },
+        { "value-range": ["0x01", "0x03E"], "description": "StepNumber" },
+        { "value": "0x3F", "description": "Unknown" }
+    ]
+}

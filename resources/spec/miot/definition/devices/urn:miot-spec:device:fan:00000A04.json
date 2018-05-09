@@ -1,8 +1,0 @@
-{
-    "type": "urn:miot-spec:device:fan:00000A04",
-    "description": "Fan",
-    "required-services": [
-        "urn:miot-spec:service:device-information:00000800",
-        "urn:miot-spec:service:fan:00000802"
-    ]
-}

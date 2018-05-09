@@ -1,0 +1,5 @@
+{
+	"type": "urn:blemesh-spec:message:LightLightnessLast:Get",
+	"opcode": ["82", "53"],
+	"response": "urn:blemesh-spec:message:LightLightnessLast:Status"
+}

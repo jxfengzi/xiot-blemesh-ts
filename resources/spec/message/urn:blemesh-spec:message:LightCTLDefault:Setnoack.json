@@ -1,0 +1,11 @@
+{
+	"type": "urn:blemesh-spec:message:LightCTLDefault:Setnoack",
+	"opcode": ["82", "6A"],
+	"fields": {
+		"required": [
+			"urn:blemesh-spec:field:LightnessDefault",
+			"urn:blemesh-spec:field:ColorTemperatureDefault",
+			"urn:blemesh-spec:field:DeltaUVDefault"
+		]
+	}
+}

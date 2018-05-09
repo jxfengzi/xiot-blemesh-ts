@@ -1,0 +1,9 @@
+{
+    "type": "urn:blemesh-spec:element:LightCTL:Main",
+    "models": {
+        "optional": [
+            "urn:blemesh-spec:model:LightCTL:Server",
+            "urn:blemesh-spec:model:LightCTLSetup:Server"
+        ]
+    }
+}

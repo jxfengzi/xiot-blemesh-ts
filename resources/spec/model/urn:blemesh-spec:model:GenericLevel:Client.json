@@ -1,0 +1,18 @@
+{
+	"type": "urn:blemesh-spec:model:GenericLevel:Client",
+	"id": "1003",
+	"messages": {
+		"required": [
+			"urn:blemesh-spec:message:GenericLevel:Get",
+			"urn:blemesh-spec:message:GenericLevel:Set",
+			"urn:blemesh-spec:message:GenericLevel:Status",
+			"urn:blemesh-spec:message:GenericDelta:Set",
+			"urn:blemesh-spec:message:GenericMove:Set"
+		],
+		"optional": [
+			"urn:blemesh-spec:message:GenericLevel:Setnoack",
+			"urn:blemesh-spec:message:GenericDelta:Setnoack",
+			"urn:blemesh-spec:message:GenericMove:Setnoack"
+		]
+	}
+}

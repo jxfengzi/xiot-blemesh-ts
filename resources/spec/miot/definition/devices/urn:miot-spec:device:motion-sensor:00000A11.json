@@ -1,8 +1,0 @@
-{
-    "type": "urn:miot-spec:device:motion-sensor:00000A11",
-    "description": "door",
-    "required-services": [
-        "urn:miot-spec:service:device-information:00000800",
-        "urn:miot-spec:service:motion-sensor:00000816"
-    ]
-}

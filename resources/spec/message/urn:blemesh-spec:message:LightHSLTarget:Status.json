@@ -1,0 +1,14 @@
+{
+	"type": "urn:blemesh-spec:message:LightHSLTarget:Status",
+	"opcode": ["82", "7A"],
+	"fields": {
+		"required": [
+			"urn:blemesh-spec:field:TargetLightness",
+			"urn:blemesh-spec:field:TargetHue",
+			"urn:blemesh-spec:field:TargetSaturation"
+		],
+		"optional": [
+			"urn:blemesh-spec:field:RemainingTime"
+		]
+	}
+}

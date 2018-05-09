@@ -1,0 +1,13 @@
+{
+	"type":"urn:blemesh-spec:message:GenericPowerLevel:Status",
+	"opcode": ["82", "18"],
+	"fields": {
+		"required": [
+			"urn:blemesh-spec:field:PresentPowerActual"
+		],
+		"optional": [
+			"urn:blemesh-spec:field:TargetPowerActual",
+			"urn:blemesh-spec:field:RemainingTime"
+		]
+	}
+}

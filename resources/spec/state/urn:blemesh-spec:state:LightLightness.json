@@ -1,0 +1,10 @@
+{
+	"type": "urn:blemesh-spec:state:LightLightness",
+	"includes": [
+		"urn:blemesh-spec:state:LightLightnessLinear",
+		"urn:blemesh-spec:state:LightLightnessActual",
+		"urn:blemesh-spec:state:LightLightnessLast",
+		"urn:blemesh-spec:state:LightLightnessDefault",
+		"urn:blemesh-spec:state:LightLightnessRange"
+	]
+}

@@ -1,0 +1,5 @@
+{
+	"type": "urn:blemesh-spec:message:GenericOnPowerUp:Get",
+	"opcode": ["82", "11"],
+	"response": "urn:blemesh-spec:message:GenericOnPowerUp:Status"
+}

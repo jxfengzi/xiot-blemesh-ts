@@ -1,0 +1,13 @@
+{
+    "type": "urn:blemesh-spec:message:GenericOnOff:Status",
+    "opcode": ["82", "04"],
+    "fields": {
+       "required": [
+            "urn:blemesh-spec:field:PresentOnOff"
+        ],
+       "optional": [
+            "urn:blemesh-spec:field:TargetOnOff",
+            "urn:blemesh-spec:field:RemainingTime"
+        ]
+    }
+}

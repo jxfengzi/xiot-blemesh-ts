@@ -1,0 +1,13 @@
+{
+	"type": "urn:blemesh-spec:message:LightHSLSaturation:Status",
+	"opcode": ["82", "75"],
+	"fields": {
+		"required": [
+			"urn:blemesh-spec:field:PresentSaturation"
+		],
+		"optional": [
+			"urn:blemesh-spec:field:TargetSaturation",
+			"urn:blemesh-spec:field:RemainingTime"
+		]
+	}
+}

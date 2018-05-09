@@ -1,0 +1,9 @@
+{
+    "type": "urn:blemesh-spec:element:LightHSL:Main",
+    "models": {
+        "required": [
+            "urn:blemesh-spec:model:LightHSL:Server",
+            "urn:blemesh-spec:model:LightHSLSetup:Server"
+        ]
+    }
+}

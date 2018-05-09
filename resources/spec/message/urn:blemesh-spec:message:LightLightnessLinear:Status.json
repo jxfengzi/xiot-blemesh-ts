@@ -1,0 +1,13 @@
+{
+	"type": "urn:blemesh-spec:message:LightLightnessLinear:Status",
+	"opcode": ["82", "52"],
+	"fields": {
+		"required": [
+			"urn:blemesh-spec:field:PresentLightnessLinear"
+		],
+		"optional": [
+			"urn:blemesh-spec:field:TargetLightnessLinear",
+			"urn:blemesh-spec:field:RemainingTime"
+		]
+	}
+}

@@ -1,0 +1,20 @@
+{
+	"type": "urn:blemesh-spec:model:GenericDefaultTransitionTime:Server",
+	"id": "1004",
+	"states": {
+		"required": [
+			"urn:blemesh-spec:state:GenericDefaultTransitionTime"
+		]
+	},
+	"messages": {
+		"required": [
+			"urn:blemesh-spec:message:GenericDefaultTransitionTime:Get",
+			"urn:blemesh-spec:message:GenericDefaultTransitionTime:Set",
+			"urn:blemesh-spec:message:GenericDefaultTransitionTime:Status"
+		],
+		"optional": [
+			"urn:blemesh-spec:message:GenericDefaultTransitionTime:Setnoack"
+		]
+	},
+	"client": "urn:blemesh-spec:model:GenericDefaultTransitionTime:Client"
+}

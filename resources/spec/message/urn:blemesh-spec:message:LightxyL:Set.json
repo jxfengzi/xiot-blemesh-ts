@@ -1,0 +1,17 @@
+{
+	"type": "urn:blemesh-spec:message:LightxyL:Set",
+	"opcode": ["82", "84"],
+	"fields": {
+		"required": [
+			"urn:blemesh-spec:field:TargetLightness",
+			"urn:blemesh-spec:field:TargetLightxyLx",
+			"urn:blemesh-spec:field:TargetLightxyLy",
+			"urn:blemesh-spec:field:TransactionIdentifier"
+		],
+		"optional": [
+			"urn:blemesh-spec:field:TransitionTime",
+			"urn:blemesh-spec:field:Delay"
+		]
+	},
+	"response": "urn:blemesh-spec:message:LightxyL:Status"
+}

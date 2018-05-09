@@ -1,8 +1,0 @@
-{
-    "type": "urn:miot-spec:device:outlet:00000A01",
-    "description": "Outlet",
-    "required-services": [
-        "urn:miot-spec:service:device-information:00000800",
-        "urn:miot-spec:service:switch:00000801"
-    ]
-}

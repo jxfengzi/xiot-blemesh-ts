@@ -1,0 +1,9 @@
+{
+	"type": "urn:blemesh-spec:message:LightLightnessDefault:Setnoack",
+	"opcode": ["82", "5A"],
+	"fields": {
+		"required": [
+			"urn:blemesh-spec:field:LightnessDefault"
+		]
+	}
+}

@@ -1,0 +1,10 @@
+{
+    "type": "urn:blemesh-spec:field:StatusCode",
+    "format": "uint8",
+    "bits": 8,
+    "value-list": [
+        {"value": "0x00", "description": "Success"},
+        {"value": "0x01", "description": "CannotSetMin"},
+        {"value": "0x02", "description": "CannotSetMax"}
+    ]
+}

@@ -1,0 +1,6 @@
+{
+    "type": "urn:blemesh-spec:field:PresentDeltaUV",
+    "format": "int16",
+    "bits": 16,
+    "value-range": ["0x8000", "0x7FFF"]
+}

@@ -1,0 +1,20 @@
+{
+    "type": "urn:blemesh-spec:model:GenericOnOff:Server",
+	"id": "1000",
+	"states": {
+		"required": [
+			"urn:blemesh-spec:state:GenericOnOff"
+		]	
+	},
+	"messages": {
+		"required": [
+			"urn:blemesh-spec:message:GenericOnOff:Get",
+			"urn:blemesh-spec:message:GenericOnOff:Set",
+			"urn:blemesh-spec:message:GenericOnOff:Status"
+		],
+		"optional": [
+			"urn:blemesh-spec:message:GenericOnOff:Setnoack"
+		]
+	},
+	"client": "urn:blemesh-spec:model:GenericOnOff:Client"
+}

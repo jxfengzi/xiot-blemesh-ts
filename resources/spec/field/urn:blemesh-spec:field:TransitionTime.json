@@ -1,0 +1,8 @@
+{
+    "type": "urn:blemesh-spec:field:TransitionTime",
+    "bits": 8,
+    "field-values": [
+        "urn:blemesh-spec:field-value:StepNumber",
+        "urn:blemesh-spec:field-value:StepResolution"
+    ]
+}

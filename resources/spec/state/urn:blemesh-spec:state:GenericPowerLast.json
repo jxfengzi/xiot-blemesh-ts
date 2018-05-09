@@ -1,0 +1,7 @@
+{
+	"type": "urn:blemesh-spec:state:GenericPowerLast",
+	"access": ["read","notify"],
+	"fields": [
+      "urn:blemesh-spec:field:PowerLast"
+    ]
+}

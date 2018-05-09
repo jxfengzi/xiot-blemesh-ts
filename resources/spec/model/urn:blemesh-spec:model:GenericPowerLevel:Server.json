@@ -1,0 +1,30 @@
+{
+	"type": "urn:blemesh-spec:model:GenericPowerLevel:Server",
+	"id": "1009",
+	"extend": [
+		"urn:blemesh-spec:model:GenericPowerOnOff:Server",
+		"urn:blemesh-spec:model:GenericLevelServer"
+	],
+	"states": {
+		"required": [
+			"urn:blemesh-spec:state:GenericPowerLevel"
+		]
+	},
+	"messages": {
+		"required": [
+			"urn:blemesh-spec:message:GenericPowerActual:Get",
+			"urn:blemesh-spec:message:GenericPowerActual:Set",
+			"urn:blemesh-spec:message:GenericPowerActual:Status",
+			"urn:blemesh-spec:message:GenericPowerLast:Get",
+			"urn:blemesh-spec:message:GenericPowerLast:Status",
+			"urn:blemesh-spec:message:GenericPowerDefault:Get",
+			"urn:blemesh-spec:message:GenericPowerDefault:Status",
+			"urn:blemesh-spec:message:GenericPowerRange:Get",
+			"urn:blemesh-spec:message:GenericPowerRange:Status"
+		],
+		"optional": [
+			"urn:blemesh-spec:message:GenericPowerActual:Setnoack"
+		]
+	},
+	"client": "urn:blemesh-spec:model:GenericPower:Client"
+}

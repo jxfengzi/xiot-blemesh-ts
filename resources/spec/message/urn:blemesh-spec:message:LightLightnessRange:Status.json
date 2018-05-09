@@ -1,0 +1,11 @@
+{
+	"type": "urn:blemesh-spec:message:LightLightnessRange:Status",
+	"opcode": ["82", "58"],
+	"fields": {
+		"required": [
+			"urn:blemesh-spec:field:StatusCode",
+			"urn:blemesh-spec:field:RangeMin",
+			"urn:blemesh-spec:field:RangeMax"
+		]
+	}
+}

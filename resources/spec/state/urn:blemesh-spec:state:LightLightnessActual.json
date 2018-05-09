@@ -1,0 +1,14 @@
+{
+	"type": "urn:blemesh-spec:state:LightLightnessActual",
+	"access": ["read", "write", "notify"],
+	"fields": [
+		"urn:blemesh-spec:field:PresentLightness"
+	],
+	"related-states": [
+		"urn:blemesh-spec:state:LightLightnessLinear",
+		"urn:blemesh-spec:state:GenericLevel",
+		"urn:blemesh-spec:state:GenericOnOff",
+		"urn:blemesh-spec:state:GenericOnPowerUp",
+		"urn:blemesh-spec:state:LightLightnessRange"
+	]
+}

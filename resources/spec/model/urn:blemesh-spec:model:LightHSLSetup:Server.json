@@ -1,0 +1,27 @@
+{
+	"type": "urn:blemesh-spec:model:LightHSLSetup:Server",
+	"id": "1308",
+	"extend": [
+		"urn:blemesh-spec:model:LightHSL:Server",
+		"urn:blemesh-spec:model:LightLightnessSetup:Server"
+	],
+	"states": {
+		"required": [
+			"urn:blemesh-spec:state:LightHSLHueDefault",
+			"urn:blemesh-spec:state:LightHSLSaturationDefault",
+			"urn:blemesh-spec:state:LightHSLHueRange",
+			"urn:blemesh-spec:state:LightHSLSaturationRange"
+		]
+	},
+	"messages": {
+		"required": [
+			"urn:blemesh-spec:message:LightHSLRange:Set",
+			"urn:blemesh-spec:message:LightHSLDefault:Set"
+		],
+		"optional": [
+			"urn:blemesh-spec:message:LightHSLRange:Setnoack",
+			"urn:blemesh-spec:message:LightHSLDefault:Setnoack"	
+		]
+	},
+	"client": "urn:blemesh-spec:model:LightHSL:Client"
+}

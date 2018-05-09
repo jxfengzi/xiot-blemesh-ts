@@ -1,0 +1,26 @@
+{
+	"type": "urn:blemesh-spec:model:LightCTL:Client",
+	"id": "1305",
+	"messages": {
+		"required": [
+			"urn:blemesh-spec:message:LightCTL:Get",
+			"urn:blemesh-spec:message:LightCTL:Set",
+			"urn:blemesh-spec:message:LightCTL:Status",
+			"urn:blemesh-spec:message:LightCTLTemperature:Get",
+			"urn:blemesh-spec:message:LightCTLTemperature:Set",
+			"urn:blemesh-spec:message:LightCTLTemperature:Status",
+			"urn:blemesh-spec:message:LightCTLDefault:Get",
+			"urn:blemesh-spec:message:LightCTLDefault:Set",
+			"urn:blemesh-spec:message:LightCTLDefault:Status",
+			"urn:blemesh-spec:message:LightCTLTemperatureRange:Get",
+			"urn:blemesh-spec:message:LightCTLTemperatureRange:Set",
+			"urn:blemesh-spec:message:LightCTLTemperatureRange:Status"
+		],
+		"optional": [
+			"urn:blemesh-spec:message:LightCTL:Setnoack",
+			"urn:blemesh-spec:message:LightCTLTemperature:Setnoack",
+			"urn:blemesh-spec:message:LightCTLDefault:Setnoack",
+			"urn:blemesh-spec:message:LightCTLTemperatureRange:Setnoack"
+		]
+	}
+}

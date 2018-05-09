@@ -1,0 +1,11 @@
+{
+	"type": "urn:blemesh-spec:state:LightCTL",
+	"includes": [
+		"urn:blemesh-spec:state:LightCTLTemperature",
+		"urn:blemesh-spec:state:LightCTLTemperatureRange",
+		"urn:blemesh-spec:state:LightCTLTemperatureDefault",
+		"urn:blemesh-spec:state:LightCTLDeltaUV",
+		"urn:blemesh-spec:state:LightCTLDeltaUVDefault",
+		"urn:blemesh-spec:state:LightCTLLightness"
+	]
+}

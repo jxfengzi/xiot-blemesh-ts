@@ -1,0 +1,11 @@
+{
+	"type": "urn:blemesh-spec:message:LightxyLDefault:Status",
+	"opcode": ["82", "8E"],
+	"fields": {
+		"required": [
+			"urn:blemesh-spec:field:LightnessDefault",
+			"urn:blemesh-spec:field:LightxyLx",
+			"urn:blemesh-spec:field:LightxyLy"
+		]
+	}
+}

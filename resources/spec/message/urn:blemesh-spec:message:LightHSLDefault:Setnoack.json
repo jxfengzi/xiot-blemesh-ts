@@ -1,0 +1,11 @@
+{
+	"type": "urn:blemesh-spec:message:LightHSLDefault:Setnoack",
+	"opcode": ["82", "80"],
+	"fields": {
+		"required": [
+			"urn:blemesh-spec:field:LightnessDefault",
+			"urn:blemesh-spec:field:HueDefault",
+			"urn:blemesh-spec:field:SaturationDefault"
+		]
+	}
+}

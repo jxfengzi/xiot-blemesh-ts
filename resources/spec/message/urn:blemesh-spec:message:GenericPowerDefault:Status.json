@@ -1,0 +1,9 @@
+{
+	"type": "urn:blemesh-spec:message:GenericPowerDefault:Status",
+	"opcode": ["82", "1C"],
+	"fields": {
+		"required": [
+			"urn:blemesh-spec:field:PowerDefault"
+		]
+	}
+}

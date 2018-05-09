@@ -1,0 +1,9 @@
+{
+    "type": "urn:blemesh-spec:field:TargetOnOff",
+    "format": "uint8",
+    "bits": 8,
+    "value-list": [
+        {"value": "0x00", "description": "on"},
+        {"value": "0x01", "description": "off"}
+    ]
+}

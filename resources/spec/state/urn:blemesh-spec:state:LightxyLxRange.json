@@ -1,0 +1,8 @@
+{
+	"type": "urn:blemesh-spec:state:LightxyLxRange",
+	"access": ["read", "write", "notify"],
+	"fields": [
+		"urn:blemesh-spec:field:LightxyLxRangeMin",
+		"urn:blemesh-spec:field:LightxyLxRangeMax"
+	]
+}

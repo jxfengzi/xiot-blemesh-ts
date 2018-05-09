@@ -1,0 +1,11 @@
+{
+	"type": "urn:blemesh-spec:message:LightLightnessRange:Set",
+	"opcode": ["82", "5B"],
+	"fields": {
+		"required": [
+			"urn:blemesh-spec:field:RangeMin",
+			"urn:blemesh-spec:field:RangeMax"
+		]
+	},
+	"response": "urn:blemesh-spec:message:LightLightnessRange:Status"
+}

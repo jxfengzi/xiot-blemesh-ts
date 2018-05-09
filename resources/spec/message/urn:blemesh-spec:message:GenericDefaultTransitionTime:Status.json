@@ -1,0 +1,9 @@
+{
+    "type": "urn:blemesh-spec:message:GenericDefaultTransitionTime:Status",
+    "opcode": ["82", "10"],
+    "fields": {
+        "required": [
+            "urn:blemesh-spec:field:TransitionTime"
+        ]
+    }
+}

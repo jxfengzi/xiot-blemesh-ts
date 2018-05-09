@@ -1,0 +1,31 @@
+{
+	"type": "urn:blemesh-spec:model:LightLightness:Client",
+	"id": "1302",
+	"extend": [
+		"urn:blemesh-spec:model:GenericPowerOnOff:Client"
+	],
+	"messages": {
+		"required": [
+			"urn:blemesh-spec:message:LightLightnessActual:Get",
+			"urn:blemesh-spec:message:LightLightnessActual:Set",
+			"urn:blemesh-spec:message:LightLightnessActual:Status",
+			"urn:blemesh-spec:message:LightLightnessLinear:Get",
+			"urn:blemesh-spec:message:LightLightnessLinear:Set",
+			"urn:blemesh-spec:message:LightLightnessLinear:Status",
+			"urn:blemesh-spec:message:LightLightnessLast:Get",
+			"urn:blemesh-spec:message:LightLightnessLast:Status",
+			"urn:blemesh-spec:message:LightLightnessDefault:Get",
+			"urn:blemesh-spec:message:LightLightnessDefault:Set",
+			"urn:blemesh-spec:message:LightLightnessDefault:Status",
+			"urn:blemesh-spec:message:LightLightnessRange:Get",
+			"urn:blemesh-spec:message:LightLightnessRange:Set",
+			"urn:blemesh-spec:message:LightLightnessRange:Status"
+		],
+		"optional": [
+			"urn:blemesh-spec:message:LightLightnessActual:Setnoack",
+			"urn:blemesh-spec:message:LightLightnessLinear:Setnoack",
+			"urn:blemesh-spec:message:LightLightnessDefault:Setnoack",
+			"urn:blemesh-spec:message:LightLightnessRange:Setnoack"
+		]
+	}
+}

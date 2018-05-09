@@ -1,0 +1,5 @@
+{
+	"type": "urn:blemesh-spec:message:LightHSL:Get",
+	"opcode": ["82", "6D"],
+	"response": "urn:blemesh-spec:message:LightHSL:Status"
+}

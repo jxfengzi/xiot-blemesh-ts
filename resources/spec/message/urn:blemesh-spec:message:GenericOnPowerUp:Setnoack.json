@@ -1,0 +1,9 @@
+{
+	"type": "urn:blemesh-spec:message:GenericOnPowerUp:Setnoack",
+	"opcode": ["82", "14"],
+	"fields": {
+		"required": [
+			"urn:blemesh-spec:field:PowerUpMode"
+		]
+	}
+}

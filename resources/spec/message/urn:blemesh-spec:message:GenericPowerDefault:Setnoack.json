@@ -1,0 +1,9 @@
+{
+	"type": "urn:blemesh-spec:message:GenericPowerDefault:Setnoack",
+	"opcode": ["82", "20"],
+	"fields": {
+		"required": [
+			"urn:blemesh-spec:field:PowerDefault"
+		]
+	}
+}

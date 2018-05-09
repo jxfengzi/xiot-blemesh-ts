@@ -1,0 +1,11 @@
+{
+	"type": "urn:blemesh-spec:message:GenericPowerRange:Set",
+	"opcode": ["82", "21"],
+	"fields": {
+		"required": [
+			"urn:blemesh-spec:field:RangeMin",
+			"urn:blemesh-spec:field:RangeMax"
+		]
+	},
+	"response": "urn:blemesh-spec:message:GenericPowerRange:Status"
+}

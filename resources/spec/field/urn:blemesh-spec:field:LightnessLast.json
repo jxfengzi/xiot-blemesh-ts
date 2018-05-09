@@ -1,0 +1,9 @@
+{
+    "type": "urn:blemesh-spec:field:LightnessLast",
+    "format": "uint16",
+    "bits": 16,
+    "value-list": [
+        {"value-range": ["0x0001", "0xFFFE"], "description": "PerceivedLightness"},
+        {"value": "0xFFFF", "description": "HighestPerceivedLightness"}
+    ]
+}

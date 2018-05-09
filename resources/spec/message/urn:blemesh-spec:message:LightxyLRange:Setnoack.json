@@ -1,0 +1,12 @@
+{
+	"type": "urn:blemesh-spec:message:LightxyLRange:Setnoack",
+	"opcode": ["82", "90"],
+	"fields": {
+		"required": [
+			"urn:blemesh-spec:field:LightxyLxRangeMin",
+			"urn:blemesh-spec:field:LightxyLxRangeMax",
+			"urn:blemesh-spec:field:LightxyLyRangeMin",
+			"urn:blemesh-spec:field:LightxyLyRangeMax"
+		]
+	}
+}

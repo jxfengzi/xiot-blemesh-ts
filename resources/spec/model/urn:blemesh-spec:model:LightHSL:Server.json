@@ -1,0 +1,27 @@
+{
+	"type": "urn:blemesh-spec:model:LightHSL:Server",
+	"id": "1307",
+	"extend": [
+		"urn:blemesh-spec:model:LightLightness:Server"
+	],
+	"states": {
+		"required": [
+			"urn:blemesh-spec:state:LightHSL"
+		]
+	},
+	"messages": {
+		"required": [
+			"urn:blemesh-spec:message:LightHSL:Get",
+			"urn:blemesh-spec:message:LightHSL:Set",
+			"urn:blemesh-spec:message:LightHSL:Status",
+			"urn:blemesh-spec:message:LightHSLTarget:Get",
+			"urn:blemesh-spec:message:LightHSLTarget:Status",
+			"urn:blemesh-spec:message:LightHSLDefault:Get",
+			"urn:blemesh-spec:message:LightHSLDefault:Status"
+		],
+		"optional": [
+			"urn:blemesh-spec:message:LightHSL:Setnoack"
+		]
+	},
+	"client": "urn:blemesh-spec:model:LightHSL:Client"
+}

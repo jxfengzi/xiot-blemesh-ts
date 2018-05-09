@@ -1,0 +1,25 @@
+{
+	"type": "urn:blemesh-spec:model:LightxyLSetup:Server",
+	"id": "130D",
+	"extend": [
+		"urn:blemesh-spec:model:LightxyL:Server",
+		"urn:blemesh-spec:model:LightLightnessSetup:Server"
+	],
+	"states": {
+		"required": [
+			"urn:blemesh-spec:state:LightxyLxDefault",
+			"urn:blemesh-spec:state:LightxyLyDefault",
+			"urn:blemesh-spec:state:LightxyLxRange",
+			"urn:blemesh-spec:state:LightxyLyRange"
+		]
+	},
+	"messages": {
+		"required": [
+			"urn:blemesh-spec:message:LightxyLDefault:Set",
+			"urn:blemesh-spec:message:LightxyLDefault:Setnoack",
+			"urn:blemesh-spec:message:LightxyLRange:Set",
+			"urn:blemesh-spec:message:LightxyLRange:Setnoack"
+		]
+	},
+	"client": "urn:blemesh-spec:model:LightxyL:Client"
+}

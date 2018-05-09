@@ -1,0 +1,5 @@
+{
+	"type": "urn:blemesh-spec:message:LightCTL:Get",
+	"opcode": ["82", "5D"],
+	"response": "urn:blemesh-spec:message:LightCTL:Status"
+}

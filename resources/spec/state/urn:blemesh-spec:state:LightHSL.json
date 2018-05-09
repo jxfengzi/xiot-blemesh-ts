@@ -1,0 +1,10 @@
+{
+	"type": "urn:blemesh-spec:state:LightHSL",
+	"includes": [
+		"urn:blemesh-spec:state:LightHSLHue",
+		"urn:blemesh-spec:state:LightHueDefault",
+		"urn:blemesh-spec:state:LightHSLSaturation",
+		"urn:blemesh-spec:state:LightSaturationDefault",
+		"urn:blemesh-spec:state:LightHSLLightness"
+	]
+}

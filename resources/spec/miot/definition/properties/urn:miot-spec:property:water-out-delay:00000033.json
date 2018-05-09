@@ -1,7 +1,0 @@
-{
-    "type": "urn:miot-spec:property:water-out-delay:00000033",
-    "description": "water out delay",
-    "format": "uint16",
-    "access": ["read", "write", "notify"],
-    "unit": "minutes"
-}

@@ -1,0 +1,13 @@
+{
+	"type": "urn:blemesh-sepc:message:LightLightness:Status",
+	"opcode": ["82", "4E"],
+	"fields": {
+		"required": [
+			"urn:blemesh-spec:field:PresentLightness"
+		],
+		"optional": [
+			"urn:blemesh-spec:field:TargetLightness",
+			"urn:blemesh-spec:field:RemainingTime"
+		]
+	}
+}

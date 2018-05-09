@@ -1,0 +1,25 @@
+{
+	"type": "urn:blemesh-spec:model:GenericPowerLevelSetup:Server",
+	"id": "100A",
+	"extend": [
+		"urn:blemesh-spec:model:GenericPowerLevelServer",
+		"urn:blemesh-spec:model:GenericPowerOnOffSetupServer"
+	],
+	"states": {
+		"required": [
+			"urn:blemesh-spec:state:GenericPowerDefault",
+			"urn:blemesh-spec:state:GenericPowerRange"
+		]
+	},
+	"messages": {
+		"required": [
+			"urn:blemesh-spec:message:GenericPowerDefault:Set",
+			"urn:blemesh-spec:message:GenericPowerRange:Set"
+		],
+		"optional": [
+			"urn:blemesh-spec:message:GenericPowerDefault:Setnoack",
+			"urn:blemesh-spec:message:GenericPowerRange:Setnoack"
+		]
+	},
+	"client": "urn:blemesh-spec:model:GenericPowerLevel:Client"
+}

@@ -1,0 +1,13 @@
+{
+	"type": "urn:blemesh-spec:message:LightHSLRange:Status",
+	"opcode": ["82", "7E"],
+	"fields": {
+		"required": [
+			"urn:blemesh-spec:field:StatusCode",
+			"urn:blemesh-spec:field:HueRangeMin",
+			"urn:blemesh-spec:field:HueRangeMax",
+			"urn:blemesh-spec:field:SaturationRangeMin",
+			"urn:blemesh-spec:field:SaturationRangeMax"
+		]
+	}
+}

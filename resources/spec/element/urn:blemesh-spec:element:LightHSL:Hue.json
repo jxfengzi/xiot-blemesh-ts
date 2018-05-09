@@ -1,0 +1,8 @@
+{
+    "type": "urn:blemesh-spec:element:LightHSL:Hue",
+    "models": {
+        "required": [
+            "urn:blemesh-spec:model:LightHSLHue:Server"
+        ]
+    }
+}

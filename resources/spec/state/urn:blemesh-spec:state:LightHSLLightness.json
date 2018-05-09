@@ -1,0 +1,10 @@
+{
+	"type": "urn:blemesh-spec:state:LightHSLLightness",
+	"access": ["read", "write", "notify"],
+	"fields": [
+		"urn:blemesh-spec:field:PresentLightness"
+	],
+	"related-states": [
+		"urn:blemesh-spec:state:LightLightnessActual"
+	]
+}

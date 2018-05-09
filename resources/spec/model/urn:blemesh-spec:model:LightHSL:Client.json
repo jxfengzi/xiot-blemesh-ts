@@ -1,0 +1,35 @@
+{
+	"type": "urn:blemesh-spec:model:LightHSL:Client",
+	"id": "1309",
+	"extend": [
+		"urn:blemesh-spec:model:LightLightness:Client"
+	],
+	"messages": {
+		"required": [
+			"urn:blemesh-spec:message:LightHSL:Get",
+			"urn:blemesh-spec:message:LightHSL:Set",
+			"urn:blemesh-spec:message:LightHSL:Status",
+			"urn:blemesh-spec:message:LightHSLTarget:Get",
+			"urn:blemesh-spec:message:LightHSLTarget:Status",
+			"urn:blemesh-spec:message:LightHSLDefault:Get",
+			"urn:blemesh-spec:message:LightHSLDefault:Set",
+			"urn:blemesh-spec:message:LightHSLDefault:Status",
+			"urn:blemesh-spec:message:LightHSLRange:Get",
+			"urn:blemesh-spec:message:LightHSLRange:Set",
+			"urn:blemesh-spec:message:LightHSLRange:Status",
+			"urn:blemesh-spec:message:LightHSLHue:Get",
+			"urn:blemesh-spec:message:LightHSLHue:Set",
+			"urn:blemesh-spec:message:LightHSLHue:Status",
+			"urn:blemesh-spec:message:LightHSLSaturation:Get",
+			"urn:blemesh-spec:message:LightHSLSaturation:Set",
+			"urn:blemesh-spec:message:LightHSLSaturation:Status"
+		],
+		"optional": [
+			"urn:blemesh-spec:message:LightHSL:Setnoack",
+			"urn:blemesh-spec:message:LightHSLDefault:Setnoack",
+			"urn:blemesh-spec:message:LightHSLRange:Setnoack",
+			"urn:blemesh-spec:message:LightHSLHue:Setnoack",
+			"urn:blemesh-spec:message:LightHSLSaturation:Setnoack"
+		]
+	}
+}

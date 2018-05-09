@@ -1,7 +1,0 @@
-{
-    "type": "urn:miot-spec:property:filter-max-life-expectancy:00000017",
-    "description": "Filter Max Life Expectancy",
-    "format": "uint32",
-    "access": ["read"],
-    "unit": "hours"
-}

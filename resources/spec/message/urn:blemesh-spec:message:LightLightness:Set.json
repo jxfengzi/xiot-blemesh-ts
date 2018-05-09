@@ -1,0 +1,15 @@
+{
+	"type": "urn:blemesh-spec:message:LightLightness:Set",
+	"opcode": ["82", "4C"],
+	"fields": {
+		"required": [
+			"urn:blemesh-spec:field:TargetLightness",
+			"urn:blemesh-spec:field:TransactionIdentifier"
+		],
+		"optional": [
+			"urn:blemesh-spec:field:TransitionTime",
+			"urn:blemesh-spec:field:Delay"
+		]
+	},
+	"response": "urn:blemesh-spec:message:LightLightness:Status"
+}

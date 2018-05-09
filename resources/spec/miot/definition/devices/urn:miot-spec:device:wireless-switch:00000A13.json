@@ -1,8 +1,0 @@
-{
-    "type": "urn:miot-spec:device:wireless-switch:00000A13",
-    "description": "door",
-    "required-services": [
-        "urn:miot-spec:service:device-information:00000800",
-        "urn:miot-spec:service:button:00000818"
-    ]
-}

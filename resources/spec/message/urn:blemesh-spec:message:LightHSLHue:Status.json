@@ -1,0 +1,13 @@
+{
+	"type": "urn:blemesh-spec:message:LightHSLHue:Status",
+	"opcode": ["82", "71"],
+	"fields": {
+		"required": [
+			"urn:blemesh-spec:field:PresentHue"
+		],
+		"optional": [
+			"urn:blemesh-spec:field:TargetHue",
+			"urn:blemesh-spec:field:RemainingTime"
+		]
+	}
+}

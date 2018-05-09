@@ -1,0 +1,10 @@
+{
+    "type": "urn:blemesh-spec:field:TargetLightness",
+    "format": "uint16",
+    "bits": 16,
+    "value-list":[
+        {"value": "0x0000", "description": "LightNotEmittedByElm"},
+        {"value-range": ["0x0001", "0xFFFE"], "description": "Lightness"},
+        {"value": "0xFFFF", "description": "HighestLightness"}
+    ]
+}

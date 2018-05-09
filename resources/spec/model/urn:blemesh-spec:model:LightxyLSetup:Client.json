@@ -1,0 +1,30 @@
+{
+	"type": "urn:blemesh-spec:model:LightxyLSetup:Client",
+	"id": "130E",
+	"extend": [
+		"urn:blemesh-spec:model:LightLightness:Client"
+	],
+	"messages": {
+		"required": [
+			"urn:blemesh-spec:message:LightxyL:Get",
+			"urn:blemesh-spec:message:LightxyL:Set",
+			"urn:blemesh-spec:message:LightxyL:Setnoack",
+			"urn:blemesh-spec:message:LightxyL:Status",
+			"urn:blemesh-spec:message:LightxyLTarget:Get",
+			"urn:blemesh-spec:message:LightxyLTarget:Status",
+			"urn:blemesh-spec:message:LightxyLDefault:Get",
+			"urn:blemesh-spec:message:LightxyLDefault:Set",
+			"urn:blemesh-spec:message:LightxyLDefault:Setnoack",
+			"urn:blemesh-spec:message:LightxyLDefault:Status",
+			"urn:blemesh-spec:message:LightxyLRange:Get",
+			"urn:blemesh-spec:message:LightxyLRange:Set",
+			"urn:blemesh-spec:message:LightxyLRange:Setnoack",
+			"urn:blemesh-spec:message:LightxyLRange:Status"
+		],
+		"optional": [
+			"urn:blemesh-spec:message:LightxyL:Setnoack",
+			"urn:blemesh-spec:message:LightxyLDefault:Setnoack",
+			"urn:blemesh-spec:message:LightxyLRange:Setnoack"
+		]
+	}
+}

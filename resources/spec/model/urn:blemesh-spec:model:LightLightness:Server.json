@@ -1,0 +1,34 @@
+{
+	"type": "urn:blemesh-spec:model:LightLightness:Server",
+	"id": "1300",
+	"extend": [
+		"urn:blemesh-spec:model:GenericPowerOnOff:Server",
+		"urn:blemesh-spec:model:GenericLevel:Server"
+	],
+	"states": {
+		"required": [
+			"urn:blemesh-spec:state:LightLightness"
+		]
+	},
+	"messages": {
+		"required": [
+			"urn:blemesh-spec:message:LightLightnessActual:Get",
+			"urn:blemesh-spec:message:LightLightnessActual:Set",
+			"urn:blemesh-spec:message:LightLightnessActual:Status",
+			"urn:blemesh-spec:message:LightLightnessLinear:Get",
+			"urn:blemesh-spec:message:LightLightnessLinear:Set",
+			"urn:blemesh-spec:message:LightLightnessLinear:Status",
+			"urn:blemesh-spec:message:LightLightnessLast:Get",
+			"urn:blemesh-spec:message:LightLightnessLast:Status",
+			"urn:blemesh-spec:message:LightLightnessDefault:Get",
+			"urn:blemesh-spec:message:LightLightnessDefault:Status",
+			"urn:blemesh-spec:message:LightLightnessRange:Get",
+			"urn:blemesh-spec:message:LightLightnessRange:Status"	
+		],
+		"optional": [
+			"urn:blemesh-spec:message:LightLightnessActual:Setnoack",
+			"urn:blemesh-spec:message:LightLightnessLinear:Setnoack"
+		]
+	},
+	"client": "urn:blemesh-spec:model:LightLightness:Client"
+}

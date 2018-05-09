@@ -1,0 +1,12 @@
+{
+	"type": "urn:blemesh-spec:state:LightHSLSaturation",
+	"access": [ "read", "write", "notify"],
+	"fields": [
+		"urn:blemesh-spec:field:PresentSaturation"
+	],
+	"related-states": [
+		"urn:blemesh-spec:state:GenericLevel",
+		"urn:blemesh-spec:state:GenericOnPowerUp",
+		"urn:blemesh-spec:state:LightHSLSaturationRange"
+	]
+}

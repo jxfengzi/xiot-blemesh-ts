@@ -1,0 +1,10 @@
+{
+	"type": "urn:blemesh-spec:message:GenericPowerRange:Setnoack",
+	"opcode": ["82", "22"],
+	"fields": {
+		"required": [
+			"urn:blemesh-spec:field:RangeMin",
+			"urn:blemesh-spec:field:RangeMax"
+		]
+	}
+}

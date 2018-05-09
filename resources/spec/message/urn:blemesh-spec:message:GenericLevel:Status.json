@@ -1,0 +1,13 @@
+{
+	"type": "urn:blemesh-spec:message:GenericLevel:Status",
+	"opcode": ["82", "08"],
+	"fields": {
+		"required": [
+			"urn:blemesh-spec:field:PresentLevel"
+		],
+		"optional": [
+			"urn:blemesh-spec:field:TargetLevel",
+			"urn:blemesh-spec:field:RemainingTime"
+		]
+	}
+}

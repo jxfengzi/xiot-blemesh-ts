@@ -1,0 +1,10 @@
+{
+    "type": "urn:blemesh-spec:field:PowerUpMode",
+    "format": "uint8",
+    "bits": 8,
+    "value-list": [
+        {"value": "0x00", "description":"Off"},
+        {"value": "0x01", "description":"Default"},
+        {"value": "0x02", "description":"Restore"}
+    ]
+}

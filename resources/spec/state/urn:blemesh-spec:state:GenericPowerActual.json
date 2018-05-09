@@ -1,0 +1,13 @@
+{
+	"type": "urn:blemesh-spec:state:GenericPowerActual",
+	"access": ["read","write","notify"],
+	"fields": [
+        "urn:blemesh-spec:field:PresentPowerActual"
+    ],
+	"related-states": [
+		"urn:blemesh-spec:state:GenericLevel",
+		"urn:blemesh-spec:state:GenericOnOff",
+		"urn:blemesh-spec:state:GenericOnPowerUp",
+		"urn:blemesh-spec:state:GenericPowerRange"
+	]
+}

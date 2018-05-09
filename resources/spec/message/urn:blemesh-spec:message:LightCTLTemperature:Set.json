@@ -1,0 +1,16 @@
+{
+	"type": "urn:blemesh-spec:message:LightCTLTemperature:Set",
+	"opcode": ["82", "64"],
+	"fields": {
+		"required": [
+			"urn:blemesh-spec:field:TargetColorTemperature",
+			"urn:blemesh-spec:field:TargetDeltaUV",
+			"urn:blemesh-spec:field:TransactionIdentifier"
+		],
+		"optional": [
+			"urn:blemesh-spec:field:TransitionTime",
+			"urn:blemesh-spec:field:Delay"
+		]
+	},
+	"response": "urn:blemesh-spec:message:LightCTLTemperature:Status"
+}

@@ -1,6 +1,0 @@
-{
-    "type": "urn:homekit-spec:property:administrator-only-access:00000001",
-    "description": "Administrator Only Access",
-    "format": "bool",
-    "access": ["read", "write", "notify"]
-}

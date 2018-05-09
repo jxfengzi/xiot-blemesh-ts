@@ -1,0 +1,5 @@
+{
+	"type": "urn:blemesh-spec:message:LightHSLDefault:Get",
+	"opcode": ["82", "7B"],
+	"response": "urn:blemesh-spec:message:LightHSLDefault:Status"
+}

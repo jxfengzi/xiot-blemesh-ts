@@ -1,0 +1,17 @@
+{
+	"type": "urn:blemesh-spec:message:LightCTL:Set",
+	"opcode": ["82", "5E"],
+	"fields": {
+		"required": [
+			"urn:blemesh-spec:field:TargetLightness",
+			"urn:blemesh-spec:field:TargetColorTemperature",
+			"urn:blemesh-spec:field:TargetDeltaUV",
+			"urn:blemesh-spec:field:TransactionIdentifier"
+		],
+		"optional": [
+			"urn:blemesh-spec:field:TransitionTime",
+			"urn:blemesh-spec:field:Delay"
+		]
+	},
+	"response": "urn:blemesh-spec:message:LightCTL:Status"
+}

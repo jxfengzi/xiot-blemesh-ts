@@ -1,0 +1,15 @@
+{
+	"type": "urn:blemesh-spec:message:GenericPowerLevel:Set",
+	"opcode": ["82", "16"],
+	"fields": {
+		"required": [
+			"urn:blemesh-spec:field:TargetPowerActual",
+			"urn:blemesh-spec:field:TransactionIdentifier"
+		],
+		"optional": [
+			"urn:blemesh-spec:field:TransitionTime",
+			"urn:blemesh-spec:field:Delay"
+		]
+	},
+	"response": "urn:blemesh-spec:message:GenericPowerLevel:Status"
+}

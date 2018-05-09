@@ -1,0 +1,9 @@
+{
+    "type": "urn:blemesh-spec:field:ColorTemperatureRangeMin",
+    "format": "uint16",
+    "bits": 16,
+    "value-list":[
+        {"value-range": ["0x0320", "0x4E20"], "description": "ColorTemperature"},
+        {"value": "0xFFFF", "description": "unknown"}
+    ]
+}

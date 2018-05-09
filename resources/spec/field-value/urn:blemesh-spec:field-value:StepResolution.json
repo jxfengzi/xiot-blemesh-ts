@@ -1,0 +1,11 @@
+{
+    "type": "urn:blemesh-spec:field-value:StepResolution",
+    "format": "uint8",
+    "bits": 2,
+    "value-list": [
+        { "value": "0x00", "description": "100ms" },
+        { "value": "0x01", "description": "1s" },
+        { "value": "0x02", "description": "10s" },
+        { "value": "0x03", "description": "10min" }
+    ]
+}

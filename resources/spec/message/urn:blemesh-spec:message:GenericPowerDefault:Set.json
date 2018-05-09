@@ -1,0 +1,10 @@
+{
+	"type": "urn:blemesh-spec:message:GenericPowerDefault:Set",
+	"opcode": ["82", "1F"],
+	"fields": {
+		"required": [
+			"urn:blemesh-spec:field:PowerDefault"
+		]
+	},
+	"response": "urn:blemesh-spec:message:GenericPowerDefault:Status"
+}

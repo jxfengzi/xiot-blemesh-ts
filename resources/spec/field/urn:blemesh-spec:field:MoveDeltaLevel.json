@@ -1,0 +1,6 @@
+{
+    "type": "urn:blemesh-spec:field:MoveDeltaLevel",
+    "format": "int16",
+    "bits": 16,
+    "value-range": ["0x0000", "0xFFFF"]
+}

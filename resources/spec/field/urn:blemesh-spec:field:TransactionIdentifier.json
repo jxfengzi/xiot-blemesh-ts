@@ -1,0 +1,6 @@
+{
+    "type": "urn:blemesh-spec:field:TranscationIdentifier",
+    "format": "uint8",
+    "bits": 8,
+    "value-range": ["0x00", "0xFF"]
+}

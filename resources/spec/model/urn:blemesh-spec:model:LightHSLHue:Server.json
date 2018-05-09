@@ -1,0 +1,24 @@
+{
+	"type": "urn:blemesh-spec:model:LightHSLHue:Server",
+	"id": "130A",
+	"extend": [
+		"urn:blemesh-spec:model:GenericLevel:Server"
+	],
+	"states": {
+		"required": [
+			"urn:blemesh-spec:state:LightHSLHue"
+		]
+	},
+	"messages": {
+		"required": [
+			"urn:blemesh-spec:message:LightHSLHue:Get",
+			"urn:blemesh-spec:message:LightHSLHue:Set",
+			"urn:blemesh-spec:message:LightHSLHue:Setnoack",
+			"urn:blemesh-spec:message:LightHSLHue:Status"
+		],
+		"optional": [
+			"urn:blemesh-spec:message:LightHSLHue:Setnoack"
+		]
+	},
+	"client": "urn:blemesh-spec:model:LightHSL:Client"
+}

@@ -1,0 +1,20 @@
+{
+	"type": "urn:blemesh-spec:model:GenericPowerOnOffSetup:Server",
+	"id": "1007",
+	"extend": [
+		"urn:blemesh-spec:model:GenericPowerOnOff:Server",
+		"urn:blemesh-spec:model:GenericDefaultTransitionTime:Server"
+	],
+	"states": {
+		"required": [
+			"urn:blemesh-spec:state:GenericOnPowerUp"
+		]
+	},
+	"messages": {
+		"required": [
+			"urn:blemesh-spec:message:GenericOnPowerUp:Set",
+			"urn:blemesh-spec:message:GenericOnPowerUp:Setnoack"
+		]
+	},
+	"client":"urn:blemesh-spec:model:GenericPowerOnOff:Client"
+}

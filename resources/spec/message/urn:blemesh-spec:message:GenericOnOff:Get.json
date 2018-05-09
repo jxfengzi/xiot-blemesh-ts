@@ -1,0 +1,5 @@
+{
+    "type": "urn:blemesh-spec:message:GenericOnOff:Get",
+    "opcode": ["82", "01"],
+    "response": "urn:blemesh-spec:message:GenericOnOff:Status"
+}

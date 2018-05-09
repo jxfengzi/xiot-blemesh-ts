@@ -1,0 +1,5 @@
+{
+	"type": "urn:blemesh-spec:message:LightHSLRange:Get",
+	"opcode": ["82", "7D"],
+	"response": "urn:blemesh-spec:message:LightHSLRange:Status"
+}

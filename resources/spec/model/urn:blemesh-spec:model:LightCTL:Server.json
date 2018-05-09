@@ -1,0 +1,27 @@
+{
+	"type": "urn:blemesh-spec:model:LightCTL:Server",
+	"id": "1303",
+	"extend": [
+		"urn:blemesh-spec:model:LightLightness:Server"
+	],
+	"states": {
+		"required": [
+			"urn:blemesh-spec:state:LightCTL"
+		]
+	},
+	"messages": {
+		"required": [
+			"urn:blemesh-spec:message:LightCTL:Get",
+			"urn:blemesh-spec:message:LightCTL:Set",
+			"urn:blemesh-spec:message:LightCTL:Status",
+			"urn:blemesh-spec:message:LightCTLTemperatureRange:Get",
+			"urn:blemesh-spec:message:LightCTLTemperatureRange:Status",
+			"urn:blemesh-spec:message:LightCTLDefault:Get",
+			"urn:blemesh-spec:message:LightCTLDefault:Status"
+		],
+		"optional": [
+			"urn:blemesh-spec:message:LightCTL:Setnoack"
+		]
+	},
+	"client": "urn:blemesh-spec:model:LightCTL:Client"
+}

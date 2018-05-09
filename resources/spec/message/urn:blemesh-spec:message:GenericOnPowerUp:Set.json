@@ -1,0 +1,10 @@
+{
+	"type": "urn:blemesh-spec:message:GenericOnPowerUp:Set",
+	"opcode": ["82", "13"],
+	"fields": {
+		"required": [
+			"urn:blemesh-spec:field:PowerUpMode"
+		]
+	},
+	"response": "urn:blemesh-spec:message:GenericOnPowerUp:Status"
+}

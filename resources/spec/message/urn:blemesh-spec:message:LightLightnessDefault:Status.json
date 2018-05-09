@@ -1,0 +1,9 @@
+{
+	"type": "urn:blemesh-spec:message:LightLightnessDefault:Status",
+	"opcode": ["82", "56"],
+	"fields": {
+		"required": [
+			"urn:blemesh-spec:field:LightnessDefault"
+		]
+	}
+}

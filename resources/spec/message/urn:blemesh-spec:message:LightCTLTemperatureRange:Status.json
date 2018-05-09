@@ -1,0 +1,11 @@
+{
+	"type": "urn:blemesh-spec:message:LightCTLTemperatureRange:Status",
+	"opcode": ["82", "63"],
+	"fields": {
+		"required": [
+			"urn:blemesh-spec:field:StatusCode",
+			"urn:blemesh-spec:field:ColorTemperatureRangeMin",
+			"urn:blemesh-sepc:field:ColorTemperatureRangeMax"
+		]
+	}
+}

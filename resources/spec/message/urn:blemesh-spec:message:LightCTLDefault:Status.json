@@ -1,0 +1,11 @@
+{
+	"type": "urn:blemesh-spec:message:LightCTLDefault:Status",
+	"opcode": ["82", "68"],
+	"fields": {
+		"required": [
+			"urn:blemesh-spec:field:LightnessDefault",
+			"urn:blemesh-spec:field:ColorTemperatureDefault",
+			"urn:blemesh-spec:field:DeltaUVDefault"
+		]
+	}
+}

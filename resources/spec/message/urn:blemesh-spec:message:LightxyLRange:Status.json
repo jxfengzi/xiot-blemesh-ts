@@ -1,0 +1,13 @@
+{
+	"type": "urn:blemesh-spec:message:LightxyLRange:Status",
+	"opcode": ["82", "8C"],
+	"fields": {
+		"required": [
+			"urn:blemesh-spec:field:StatusCode",
+			"urn:blemesh-spec:field:LightxyLxRangeMin",
+			"urn:blemesh-spec:field:LightxyLxRangeMax",
+			"urn:blemesh-spec:field:LightxyLyRangeMin",
+			"urn:blemesh-spec:field:LightxyLyRangeMax"
+		]
+	}
+}

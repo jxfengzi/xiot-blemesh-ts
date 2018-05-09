@@ -1,4 +1,0 @@
-{
-    "type": "urn:miot-spec:action:stop-scan:0000040C",
-    "description": "Stop Scan"
-}

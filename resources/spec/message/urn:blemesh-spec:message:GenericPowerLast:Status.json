@@ -1,0 +1,9 @@
+{
+	"type": "urn:blemesh-spec:message:GenericPowerLast:Status",
+	"opcode": ["82", "1A"],
+	"fields": {
+		"required": [
+			"urn:blemesh-spec:field:PowerLast"
+		]
+	}
+}

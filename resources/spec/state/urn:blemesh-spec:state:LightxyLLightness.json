@@ -1,0 +1,7 @@
+{
+	"type": "urn:blemesh-spec:state:LightxyLLightness",
+	"access": ["read", "write", "notify"],
+	"fields": [
+		"urn:blemesh-spec:field:PresentLightness"
+	]
+}

@@ -1,0 +1,11 @@
+{
+	"type": "urn:blemesh-spec:field:PresentSaturation",
+	"format": "uint16",
+	"bits": 16,
+	"value-list": [
+		{ "value": "0x0000", "description": "lowest perceived saturation"},
+		{ "value-range": ["0x0001", "0xFFFE"], "description": "saturation of a color light"},
+		{ "value": "0xFFFF", "description": "highest perceived saturation"}
+	]
+}
+

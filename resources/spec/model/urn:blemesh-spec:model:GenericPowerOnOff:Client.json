@@ -1,0 +1,17 @@
+{
+	"type": "urn:blemesh-spec:model:GenericPowerOnOff:Client",
+	"id": "1008",
+	"extend": [
+		"urn:blemesh-spec:model:GenericOnOff:Client"
+	],
+	"messages": {
+		"required": [
+			"urn:blemesh-spec:message:GenericOnPowerUp:Get",
+			"urn:blemesh-spec:message:GenericOnPowerUp:Set",
+			"urn:blemesh-spec:message:GenericOnPowerUp:Status"
+		],
+		"optional": [
+			"urn:blemesh-spec:message:GenericOnPowerUp:Setnoack"
+		]
+	}
+}

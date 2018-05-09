@@ -1,0 +1,12 @@
+{
+	"type": "urn:blemesh-spec:message:LightHSLRange:Setnoack",
+	"opcode": ["82"],
+	"fields": {
+		"required": [
+			"urn:blemesh-spec:field:HueRangeMin",
+			"urn:blemesh-spec:field:HueRangeMax",
+			"urn:blemesh-spec:field:SaturationRangeMin",
+			"urn:blemesh-spec:field:SaturationRangeMax"
+		]
+	}
+}

@@ -1,0 +1,9 @@
+{
+	"type": "urn:blemesh-spec:state:GenericPowerLevel",
+	"includes":[
+		"urn:blemesh-spec:state:GenericPowerActual",
+		"urn:blemesh-spec:state:GenericPowerLast",
+		"urn:blemesh-spec:state:GenericPowerDefault",
+		"urn:blemesh-spec:state:GenericPowerRange"
+	]
+}

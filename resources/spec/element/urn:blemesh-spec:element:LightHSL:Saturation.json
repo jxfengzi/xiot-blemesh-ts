@@ -1,0 +1,8 @@
+{
+    "type": "urn:blemesh-spec:element:LightHSL:Saturation",
+    "models": {
+        "required": [
+            "urn:blemesh-spec:model:LightHSLSaturation:Server"
+        ]
+    }
+}

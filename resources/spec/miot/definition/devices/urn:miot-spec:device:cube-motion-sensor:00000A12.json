@@ -1,8 +1,0 @@
-{
-    "type": "urn:miot-spec:device:cube-motion-sensor:00000A12",
-    "description": "Motion Detector",
-    "required-services": [
-        "urn:miot-spec:service:device-information:00000800",
-        "urn:miot-spec:service:cube-motion-sensor:00000817"
-    ]
-}

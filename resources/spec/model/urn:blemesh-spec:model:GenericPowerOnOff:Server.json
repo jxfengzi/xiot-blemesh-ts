@@ -1,0 +1,19 @@
+{
+	"type": "urn:blemesh-spec:model:GenericPowerOnOff:Server",
+	"id": "1006",
+	"extend": [
+		"urn:blemesh-spec:model:GenericOnOff:Server"
+	],
+	"states": {
+		"required": [
+			"urn:blemesh-spec:state:GenericOnPowerUp"
+		]
+	},
+	"messages": {
+		"required": [
+			"urn:blemesh-spec:message:GenericOnPowerUp:Get",
+			"urn:blemesh-spec:message:GenericOnPowerUp:Status"
+		]
+	},
+	"client": "urn:blemesh-spec:model:GenericPowerOnOff:Client"
+}

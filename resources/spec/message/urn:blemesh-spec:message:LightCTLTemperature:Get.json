@@ -1,0 +1,5 @@
+{
+	"type": "urn:blemesh-spec:message:LightCTLTemperature:Get",
+	"opcode": ["82", "61"],
+	"response": "urn:blemesh-spec:message:LightCTLTemperature:Status"
+}

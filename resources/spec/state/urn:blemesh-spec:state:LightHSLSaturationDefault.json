@@ -1,0 +1,7 @@
+{
+	"type": "urn:blemesh-spec:state:LightHSLSaturationDefault",
+	"access": ["read", "write", "notify"],
+	"fields": [
+		"urn:blemesh-spec:field:SaturationDefault"
+	]
+}

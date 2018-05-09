@@ -1,0 +1,12 @@
+{
+	"type": "urn:blemesh-spec:state:LightCTLTemperature",
+	"access": ["read", "write", "notify"],
+	"fields": [
+		"urn:blemesh-spec:field:PresentColorTemperature"
+	],
+	"related-states": [
+		"urn:blemesh-spec:state:GenericLevel",
+		"urn:blemesh-spec:state:GenericOnPowerUp",
+		"urn:blemesh-spec:state:LightCTLTemperatureRange"
+	]
+}

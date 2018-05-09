@@ -1,0 +1,15 @@
+{
+	"type": "urn:blemesh-spec:message:LightCTLTemperature:Status",
+	"opcode": ["82", "66"],
+	"fields": {
+		"required": [
+			"urn:blemesh-spec:field:PresentColorTemperature",
+			"urn:blemesh-spec:field:PresentDeltaUV"
+		],
+		"optional": [
+			"urn:blemesh-spec:field:TargetColorTemperature",
+			"urn:blemesh-spec:field:TargetDeltaUV",
+			"urn:blemesh-spec:field:RemainingTime"
+		]
+	}
+}

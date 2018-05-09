@@ -1,0 +1,22 @@
+{
+	"type": "urn:blemesh-spec:model:LightHSLSaturation:Server",
+	"id": "130B",
+	"extend": [
+		"urn:blemesh-spec:model:GenericLevel:Server"
+	],
+	"states": {
+		"required": [
+			"urn:blemesh-spec:state:LightHSLSaturation"
+		]
+	},
+	"messages": {
+		"required": [
+			"urn:blemesh-spec:message:LightHSLSaturation:Get",
+			"urn:blemesh-spec:message:LightHSLSaturation:Set",
+			"urn:blemesh-spec:message:LightHSLSaturation:Status"
+		],
+		"optional": [
+			"urn:blemesh-spec:message:LightHSLSaturation:Setnoack"
+		]
+	}
+}

@@ -1,0 +1,10 @@
+{
+	"type": "urn:blemesh-spec:message:LightLightnessRange:Setnoack",
+	"opcode": ["82", "5C"],
+	"fields": {
+		"required": [
+			"urn:blemesh-spec:field:RangeMin",
+			"urn:blemesh-spec:field:RangeMax"
+		]
+	}
+}

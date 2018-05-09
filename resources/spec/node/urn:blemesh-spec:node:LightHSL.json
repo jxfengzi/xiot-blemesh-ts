@@ -1,0 +1,11 @@
+{
+	"type": "urn:blemesh-spec:node:LightHSL",
+	"elements": {
+        "required": [
+            "urn:blemesh-spec:element:generic:Primary",
+            "urn:blemesh-spec:element:LightHSL:Main",
+            "urn:blemesh-spec:element:LightHSL:Hue",
+            "urn:blemesh-spec:element:LightHSL:Saturation"
+        ]
+    }
+}

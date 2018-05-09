@@ -1,8 +1,0 @@
-{
-    "type": "urn:miot-spec:device:window-covering:00000A0E",
-    "description": "Window Covering",
-    "required-services": [
-        "urn:miot-spec:service:device-information:00000800",
-        "urn:miot-spec:service:window-covering:00000812"
-    ]
-}

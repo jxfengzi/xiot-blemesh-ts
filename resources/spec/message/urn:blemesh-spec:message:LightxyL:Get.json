@@ -1,0 +1,5 @@
+{
+	"type": "urn:blemesh-spec:message:LightxyL:Get",
+	"opcode": ["82", "83"],
+	"response": "urn:blemesh-spec:message:LightxyL:Status"
+}

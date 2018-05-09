@@ -1,0 +1,7 @@
+{
+	"type": "urn:blemesh-spec:state:LightCTLDeltaUVDefault",
+	"access": ["read","write","notify"],
+	"fields": [
+		"urn:blemesh-spec:field:DeltaUVDefault"
+	]
+}

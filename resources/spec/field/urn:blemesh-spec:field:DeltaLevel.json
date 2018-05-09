@@ -1,0 +1,6 @@
+{
+    "type": "urn:blemesh-spec:field:DeltaLevel",
+    "format": "int32",
+    "bits": 32,
+    "value-range": ["0x0000FFFF", "0xFFFF0001"]
+}

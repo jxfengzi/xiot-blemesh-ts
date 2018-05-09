@@ -1,0 +1,5 @@
+{
+	"type": "urn:blemesh-spec:message:LightHSLHue:Get",
+	"opcode": ["82", "6E"],
+	"response": "urn:blemesh-spec:message:LightHSLHue:Status"
+}

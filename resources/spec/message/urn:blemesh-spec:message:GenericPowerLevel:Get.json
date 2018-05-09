@@ -1,0 +1,5 @@
+{
+	"type": "urn:blemesh-spec:message:GenericPowerLevel:Get",
+	"opcode": ["82", "15"],
+	"response": "urn:blemesh-spec:message:GenericPowerLevel:Status"
+}

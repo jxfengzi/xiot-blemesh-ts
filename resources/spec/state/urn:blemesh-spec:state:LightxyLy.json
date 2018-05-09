@@ -1,0 +1,11 @@
+{
+	"type": "urn:blemesh-spec:state:LightxyLy",
+	"access": ["read", "write", "notify"],
+	"fields": [
+		"urn:blemesh-spec:field:LightxyLy"
+	],
+	"related-states": [
+		"urn:blemesh-spec:state:GenericOnPowerUp",
+		"urn:blemesh-spec:state:LightxyLy"
+	]
+}

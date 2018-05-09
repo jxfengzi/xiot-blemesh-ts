@@ -1,0 +1,9 @@
+{
+	"type": "urn:blemesh-spec:message:LightLightnessLast:Status",
+	"opcode": ["82", "54"],
+	"fields": {
+		"required": [
+			"urn:blemesh-spec:field:LightnessLast"
+		]
+	}
+}

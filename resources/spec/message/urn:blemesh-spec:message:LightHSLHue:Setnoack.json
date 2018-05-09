@@ -1,0 +1,14 @@
+{
+	"type": "urn:blemesh-spec:message:LightHSLHue:Setnoack",
+	"opcode": ["82", "70"],
+	"fields": {
+		"required": [
+			"urn:blemesh-spec:field:TargetHue",
+			"urn:blemesh-spec:field:TransactionIdentifier"
+		],
+		"optional": [
+			"urn:blemesh-spec:field:TransitionTime",
+			"urn:blemesh-spec:field:Delay"
+		]
+	}
+}

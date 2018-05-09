@@ -1,4 +1,0 @@
-{
-    "type": "urn:miot-spec:action:decrease-temperature:00000410",
-    "description": "Decrease Temperature"
-}

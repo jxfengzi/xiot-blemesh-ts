@@ -1,0 +1,5 @@
+{
+	"type": "urn:blemesh-spec:message:LightHSLSaturation:Get",
+	"opcode": ["82", "72"],
+	"response": "urn:blemesh-spec:message:LightHSLSaturation:Status"
+}
