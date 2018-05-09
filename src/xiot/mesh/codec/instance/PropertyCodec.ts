@@ -1,6 +1,6 @@
 import {Property} from '../../spec/instance/Property';
 import {PropertyOperable} from '../../spec/operable/PropertyOperable';
-import {Spec} from '../../spec/constant/Spec';
+import {BlemeshSpec} from '../../spec/constant/Spec';
 import {PropertyDefinitionCodec} from '../definition/PropertyDefinitionCodec';
 import {DataFormatToString} from '../../spec/definitions/property/data/DataFormat';
 import {ValueList} from '../../spec/definitions/property/ValueList';
@@ -15,7 +15,7 @@ export class PropertyCodec {
         if (array != null) {
             for (const o of array) {
                 const p = new Property();
-                p.iid = o[Spec.IID];
+                p.iid = o[BlemeshSpec.IID];
                 p.definition = PropertyDefinitionCodec.decode(o);
                 list.push(p);
             }
@@ -30,7 +30,7 @@ export class PropertyCodec {
         if (array != null) {
             for (const o of array) {
                 const p = new PropertyOperable();
-                p.iid = o[Spec.IID];
+                p.iid = o[BlemeshSpec.IID];
                 p.definition = PropertyDefinitionCodec.decode(o);
                 list.push(p);
             }
@@ -50,16 +50,16 @@ export class PropertyCodec {
 
         if (property.definition.constraintValue != null) {
             if (property.definition.constraintValue instanceof ValueList) {
-                object[Spec.VALUE_LIST] = property.definition.constraintValue.toJsonArray();
+                object[BlemeshSpec.VALUE_LIST] = property.definition.constraintValue.toJsonArray();
             }
 
             if (property.definition.constraintValue instanceof ValueRange) {
-                object[Spec.VALUE_RANGE] = property.definition.constraintValue.toJsonArray();
+                object[BlemeshSpec.VALUE_RANGE] = property.definition.constraintValue.toJsonArray();
             }
         }
 
         if (property.definition.unit !== Unit.NONE) {
-            object[Spec.UNIT] = UnitToString(property.definition.unit);
+            object[BlemeshSpec.UNIT] = UnitToString(property.definition.unit);
         }
 
         return object;

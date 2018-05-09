@@ -1,4 +1,4 @@
-import {Spec} from '../../spec/constant/Spec';
+import {BlemeshSpec} from '../../spec/constant/Spec';
 import {ActionType} from '../../spec/definitions/urn/ActionType';
 import {DefinitionCodec} from './DefinitionCodec';
 import {EventDefinition} from '../../spec/definitions/EventDefinition';
@@ -8,9 +8,9 @@ export class EventDefinitionCodec {
 
     static decode(json: Object): EventDefinition {
         const def = new EventDefinition();
-        def.type = ActionType.valueOf(json[Spec.TYPE]);
-        def.description = json[Spec.DESCRIPTION];
-        def.arguments = DefinitionCodec.decodeProperties(json[Spec.ARGUMENTS]);
+        def.type = ActionType.valueOf(json[BlemeshSpec.TYPE]);
+        def.description = json[BlemeshSpec.DESCRIPTION];
+        def.arguments = DefinitionCodec.decodeProperties(json[BlemeshSpec.ARGUMENTS]);
         return def;
     }
 
@@ -21,7 +21,7 @@ export class EventDefinitionCodec {
         });
 
         if (def.arguments.length > 0) {
-            object[Spec.IN] = DefinitionCodec.encodeProperties(def.arguments);
+            object[BlemeshSpec.IN] = DefinitionCodec.encodeProperties(def.arguments);
         }
 
         return object;

@@ -1,5 +1,5 @@
 import {ActionDefinition} from '../../spec/definitions/ActionDefinition';
-import {Spec} from '../../spec/constant/Spec';
+import {BlemeshSpec} from '../../spec/constant/Spec';
 import {ActionType} from '../../spec/definitions/urn/ActionType';
 import {DefinitionCodec} from './DefinitionCodec';
 
@@ -7,10 +7,10 @@ export class ActionDefinitionCodec {
 
     static decode(json: Object): ActionDefinition {
         const def = new ActionDefinition();
-        def.type = ActionType.valueOf(json[Spec.TYPE]);
-        def.description = json[Spec.DESCRIPTION];
-        def.in = DefinitionCodec.decodeProperties(json[Spec.IN]);
-        def.out = DefinitionCodec.decodeProperties(json[Spec.OUT]);
+        def.type = ActionType.valueOf(json[BlemeshSpec.TYPE]);
+        def.description = json[BlemeshSpec.DESCRIPTION];
+        def.in = DefinitionCodec.decodeProperties(json[BlemeshSpec.IN]);
+        def.out = DefinitionCodec.decodeProperties(json[BlemeshSpec.OUT]);
         return def;
     }
 
@@ -21,11 +21,11 @@ export class ActionDefinitionCodec {
         });
 
         if (def.in.length > 0) {
-            object[Spec.IN] = DefinitionCodec.encodeProperties(def.in);
+            object[BlemeshSpec.IN] = DefinitionCodec.encodeProperties(def.in);
         }
 
         if (def.out.length > 0) {
-            object[Spec.OUT] = DefinitionCodec.encodeProperties(def.out);
+            object[BlemeshSpec.OUT] = DefinitionCodec.encodeProperties(def.out);
         }
 
         return object;

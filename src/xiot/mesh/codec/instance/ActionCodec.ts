@@ -1,5 +1,5 @@
 import {Action} from '../../spec/instance/Action';
-import {Spec} from '../../spec/constant/Spec';
+import {BlemeshSpec} from '../../spec/constant/Spec';
 import {ActionOperable} from '../../spec/operable/ActionOperable';
 import {ActionType} from '../../spec/definitions/urn/ActionType';
 
@@ -11,11 +11,11 @@ export class ActionCodec {
         if (array != null) {
             for (const o of array) {
                 const a = new Action();
-                a.iid = o[Spec.IID];
-                a.type = ActionType.valueOf(o[Spec.TYPE]);
-                a.description = o[Spec.DESCRIPTION];
-                a.in = o[Spec.IN];
-                a.out = o[Spec.OUT];
+                a.iid = o[BlemeshSpec.IID];
+                a.type = ActionType.valueOf(o[BlemeshSpec.TYPE]);
+                a.description = o[BlemeshSpec.DESCRIPTION];
+                a.in = o[BlemeshSpec.IN];
+                a.out = o[BlemeshSpec.OUT];
                 list.push(a);
             }
         }
@@ -29,11 +29,11 @@ export class ActionCodec {
         if (array != null) {
             for (const o of array) {
                 const a = new ActionOperable();
-                a.iid = o[Spec.IID];
-                a.type = ActionType.valueOf(o[Spec.TYPE]);
-                a.description = o[Spec.DESCRIPTION];
-                a.in = o[Spec.IN];
-                a.out = o[Spec.OUT];
+                a.iid = o[BlemeshSpec.IID];
+                a.type = ActionType.valueOf(o[BlemeshSpec.TYPE]);
+                a.description = o[BlemeshSpec.DESCRIPTION];
+                a.in = o[BlemeshSpec.IN];
+                a.out = o[BlemeshSpec.OUT];
                 list.push(a);
             }
         }

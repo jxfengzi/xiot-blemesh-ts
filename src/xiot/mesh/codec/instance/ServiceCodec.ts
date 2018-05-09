@@ -1,4 +1,4 @@
-import {Spec} from '../../spec/constant/Spec';
+import {BlemeshSpec} from '../../spec/constant/Spec';
 import {Service} from '../../spec/instance/Service';
 import {ServiceType} from '../../spec/definitions/urn/ServiceType';
 import {PropertyCodec} from './PropertyCodec';
@@ -14,21 +14,21 @@ export class ServiceCodec {
         if (array != null) {
             for (const o of array) {
                 const a = new Service();
-                a.iid = o[Spec.IID];
-                a.type = ServiceType.valueOf(o[Spec.TYPE]);
-                a.description = o[Spec.DESCRIPTION];
+                a.iid = o[BlemeshSpec.IID];
+                a.type = ServiceType.valueOf(o[BlemeshSpec.TYPE]);
+                a.description = o[BlemeshSpec.DESCRIPTION];
 
-                const properties = PropertyCodec.decode(o[Spec.PROPERTIES]);
+                const properties = PropertyCodec.decode(o[BlemeshSpec.PROPERTIES]);
                 for (const property of properties) {
                     a.properties.set(property.iid, property);
                 }
 
-                const actions = ActionCodec.decode(o[Spec.ACTIONS]);
+                const actions = ActionCodec.decode(o[BlemeshSpec.ACTIONS]);
                 for (const action of actions) {
                     a.actions.set(action.iid, action);
                 }
 
-                const events = EventCodec.decode(o[Spec.EVENTS]);
+                const events = EventCodec.decode(o[BlemeshSpec.EVENTS]);
                 for (const event of events) {
                     a.events.set(event.iid, event);
                 }
@@ -46,21 +46,21 @@ export class ServiceCodec {
         if (array != null) {
             for (const o of array) {
                 const a = new ServiceOperable();
-                a.iid = o[Spec.IID];
-                a.type = ServiceType.valueOf(o[Spec.TYPE]);
-                a.description = o[Spec.DESCRIPTION];
+                a.iid = o[BlemeshSpec.IID];
+                a.type = ServiceType.valueOf(o[BlemeshSpec.TYPE]);
+                a.description = o[BlemeshSpec.DESCRIPTION];
 
-                const properties = PropertyCodec.decodeOperable(o[Spec.PROPERTIES]);
+                const properties = PropertyCodec.decodeOperable(o[BlemeshSpec.PROPERTIES]);
                 for (const property of properties) {
                     a.properties.set(property.iid, property);
                 }
 
-                const actions = ActionCodec.decodeOperable(o[Spec.ACTIONS]);
+                const actions = ActionCodec.decodeOperable(o[BlemeshSpec.ACTIONS]);
                 for (const action of actions) {
                     a.actions.set(action.iid, action);
                 }
 
-                const events = EventCodec.decode(o[Spec.EVENTS]);
+                const events = EventCodec.decode(o[BlemeshSpec.EVENTS]);
                 for (const event of events) {
                     a.events.set(event.iid, event);
                 }
@@ -80,15 +80,15 @@ export class ServiceCodec {
         });
 
         if (service.properties.size > 0) {
-            object[Spec.PROPERTIES] = PropertyCodec.encodeArray(service.properties);
+            object[BlemeshSpec.PROPERTIES] = PropertyCodec.encodeArray(service.properties);
         }
 
         if (service.actions.size > 0) {
-            object[Spec.ACTIONS] = ActionCodec.encodeArray(service.actions);
+            object[BlemeshSpec.ACTIONS] = ActionCodec.encodeArray(service.actions);
         }
 
         if (service.events.size > 0) {
-            object[Spec.EVENTS] = EventCodec.encodeArray(service.events);
+            object[BlemeshSpec.EVENTS] = EventCodec.encodeArray(service.events);
         }
 
         return object;

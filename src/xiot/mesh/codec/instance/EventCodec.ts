@@ -1,5 +1,5 @@
 import {Event} from '../../spec/instance/Event';
-import {Spec} from '../../spec/constant/Spec';
+import {BlemeshSpec} from '../../spec/constant/Spec';
 import {EventType} from '../../spec/definitions/urn/EventType';
 
 export class EventCodec {
@@ -10,10 +10,10 @@ export class EventCodec {
         if (array != null) {
             for (const o of array) {
                 const a = new Event();
-                a.iid = o[Spec.IID];
-                a.type = EventType.valueOf(o[Spec.TYPE]);
-                a.description = o[Spec.DESCRIPTION];
-                a.arguments.push(o[Spec.ARGUMENTS]);
+                a.iid = o[BlemeshSpec.IID];
+                a.type = EventType.valueOf(o[BlemeshSpec.TYPE]);
+                a.description = o[BlemeshSpec.DESCRIPTION];
+                a.arguments.push(o[BlemeshSpec.ARGUMENTS]);
                 list.push(a);
             }
         }

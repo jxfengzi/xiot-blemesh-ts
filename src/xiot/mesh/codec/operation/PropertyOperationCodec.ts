@@ -1,6 +1,6 @@
 import {PropertyOperation} from '../../spec/operation/PropertyOperation';
 import {PID} from '../../spec/xid/PID';
-import {Spec} from '../../spec/constant/Spec';
+import {BlemeshSpec} from '../../spec/constant/Spec';
 
 export class PropertyOperationCodec {
 
@@ -40,16 +40,16 @@ export class PropertyOperationCodec {
         if (properties instanceof Array) {
           properties.forEach(value => {
             const o = new PropertyOperation();
-            o.pid = PID.parseString(value[Spec.PID]);
-            o.status = value[Spec.STATUS];
+            o.pid = PID.parseString(value[BlemeshSpec.PID]);
+            o.status = value[BlemeshSpec.STATUS];
             if (o.status == null) {
               o.status = 0;
             }
 
             if (o.status === 0) {
-              o.value = value[Spec.VALUE];
+              o.value = value[BlemeshSpec.VALUE];
             } else {
-              o.description = value[Spec.DESCRIPTION];
+              o.description = value[BlemeshSpec.DESCRIPTION];
             }
 
             array.push(o);
@@ -89,10 +89,10 @@ export class PropertyOperationCodec {
         if (properties != null) {
           properties.forEach(value => {
                 const o = new PropertyOperation();
-                o.pid = PID.parseString(value[Spec.PID]);
-                o.status = value[Spec.STATUS];
+                o.pid = PID.parseString(value[BlemeshSpec.PID]);
+                o.status = value[BlemeshSpec.STATUS];
                 if (o.status !== 0) {
-                    o.description = value[Spec.DESCRIPTION];
+                    o.description = value[BlemeshSpec.DESCRIPTION];
                 }
 
                 array.push(o);
@@ -137,9 +137,9 @@ export class PropertyOperationCodec {
             });
 
             if (p.status === 0) {
-                object[Spec.VALUE] = p.value;
+                object[BlemeshSpec.VALUE] = p.value;
             } else {
-                object[Spec.DESCRIPTION] = p.description;
+                object[BlemeshSpec.DESCRIPTION] = p.description;
             }
 
             return object;
@@ -160,7 +160,7 @@ export class PropertyOperationCodec {
             });
 
             if (p.status !== 0) {
-                object[Spec.DESCRIPTION] = p.description;
+                object[BlemeshSpec.DESCRIPTION] = p.description;
             }
 
             return object;

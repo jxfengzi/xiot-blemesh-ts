@@ -1,4 +1,4 @@
-import {Spec} from '../../spec/constant/Spec';
+import {BlemeshSpec} from '../../spec/constant/Spec';
 import {DefinitionCodec} from './DefinitionCodec';
 import {DeviceDefinition} from '../../spec/definitions/DeviceDefinition';
 import {DeviceType} from '../../spec/definitions/urn/DeviceType';
@@ -8,10 +8,10 @@ export class DeviceDefinitionCodec {
 
     static decode(json: Object): DeviceDefinition {
         const def = new DeviceDefinition();
-        def.type = DeviceType.valueOf(json[Spec.TYPE]);
-        def.description = json[Spec.DESCRIPTION];
-        def.requiredServices = DefinitionCodec.decodeServices(json[Spec.REQUIRED_SERVICES]);
-        def.optionalServices = DefinitionCodec.decodeServices(json[Spec.OPTIONAL_SERVICES]);
+        def.type = DeviceType.valueOf(json[BlemeshSpec.TYPE]);
+        def.description = json[BlemeshSpec.DESCRIPTION];
+        def.requiredServices = DefinitionCodec.decodeServices(json[BlemeshSpec.REQUIRED_SERVICES]);
+        def.optionalServices = DefinitionCodec.decodeServices(json[BlemeshSpec.OPTIONAL_SERVICES]);
         return def;
     }
 
@@ -22,11 +22,11 @@ export class DeviceDefinitionCodec {
         });
 
         if (def.requiredServices.length > 0) {
-            object[Spec.REQUIRED_SERVICES] = ServiceDefinitionCodec.encodeArray(def.requiredServices);
+            object[BlemeshSpec.REQUIRED_SERVICES] = ServiceDefinitionCodec.encodeArray(def.requiredServices);
         }
 
         if (def.optionalServices.length > 0) {
-            object[Spec.OPTIONAL_SERVICES] = ServiceDefinitionCodec.encodeArray(def.optionalServices);
+            object[BlemeshSpec.OPTIONAL_SERVICES] = ServiceDefinitionCodec.encodeArray(def.optionalServices);
         }
 
         return object;

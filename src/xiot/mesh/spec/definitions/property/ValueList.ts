@@ -1,7 +1,7 @@
 import {ConstraintValue} from './ConstraintValue';
 import {ValueDefinition} from './ValueDefinition';
 import {DataValue} from './data/DataValue';
-import {Spec} from '../../constant/Spec';
+import {BlemeshSpec} from '../../constant/Spec';
 
 export class ValueList implements ConstraintValue {
 
@@ -26,8 +26,8 @@ export class ValueList implements ConstraintValue {
 
       for (const v of this.values) {
           const o = {};
-          o[Spec.VALUE] = v.value.getObjectValue();
-          o[Spec.DESCRIPTION] = v.description;
+          o[BlemeshSpec.VALUE] = v.value.getObjectValue();
+          o[BlemeshSpec.DESCRIPTION] = v.description;
           array.push(o);
       }
 

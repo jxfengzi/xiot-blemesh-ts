@@ -1,25 +1,25 @@
 import {ActionOperation} from '../../spec/operation/ActionOperation';
 import {AID} from '../../spec/xid/AID';
-import {Spec} from '../../spec/constant/Spec';
+import {BlemeshSpec} from '../../spec/constant/Spec';
 
 export class ActionOperationCodec {
 
     static decodeQuery(query: Object): ActionOperation {
         const o = new ActionOperation();
-        o.aid = AID.parseString(query[Spec.AID]);
-        o.in = query[Spec.IN];
+        o.aid = AID.parseString(query[BlemeshSpec.AID]);
+        o.in = query[BlemeshSpec.IN];
         return o;
     }
 
     static decodeResult(result: Object): ActionOperation {
         const o = new ActionOperation();
-        o.aid = AID.parseString(result[Spec.AID]);
-        o.oid = result[Spec.OID];
-        o.status = result[Spec.STATUS];
+        o.aid = AID.parseString(result[BlemeshSpec.AID]);
+        o.oid = result[BlemeshSpec.OID];
+        o.status = result[BlemeshSpec.STATUS];
         if (o.status === 0) {
-            o.out = result[Spec.OUT];
+            o.out = result[BlemeshSpec.OUT];
         } else {
-            o.description = result[Spec.DESCRIPTION];
+            o.description = result[BlemeshSpec.DESCRIPTION];
         }
 
         return o;
@@ -40,9 +40,9 @@ export class ActionOperationCodec {
         });
 
         if (action.status === 0) {
-            object[Spec.OUT] = action.out;
+            object[BlemeshSpec.OUT] = action.out;
         } else {
-            object[Spec.DESCRIPTION] = action.description;
+            object[BlemeshSpec.DESCRIPTION] = action.description;
         }
 
         return object;
